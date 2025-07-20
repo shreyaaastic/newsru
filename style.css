@@ -202,23 +202,22 @@
 }
 .news-sec-top{
   min-height: 40vw;
-  background-image: url("https://akm-img-a-in.tosshub.com/indiatoday/images/story/201803/SSC_1.jpeg?size=690:388");
 }
 .news-sec-main-1{
-  background-image: url("images/banner-img.webp");
+  background-image: url("banner-img.webp");
 }
 .news-sec-main-2{
-  background-image: url("images/Sports banner.webp");
+  background-image: url("Sports banner.webp");
 }
 .news-sec-main-3{
-  background-image: url("images/Technology banner img.webp");
+  background-image: url("Technology banner img.webp");
 }
 .news-sec-main-4{
 /*   min-height: 400px; */
-  background-image: url("images/Rajasthan Gang img.webp");
+  background-image: url("Rajasthan Gang img.webp");
 }
 .news-sec-main-5{
-  background-image: url("images/Delhi ‘Special 26’ img.webp");
+  background-image: url("Delhi ‘Special 26’ img.webp");
 }
 .news-section{
   padding: 10px;
@@ -373,19 +372,19 @@
   padding: 10px;
 }
 .sports-sec-main-1{
-  background-image: url("images/Liverpool Near img.webp");
+  background-image: url("Liverpool Near img.webp");
 }
 .live-match-cont-1{
-  background-image: url("images/Gamba Osaka vs Kawasaki img.webp");
+  background-image: url("Gamba Osaka vs Kawasaki img.webp");
 }
 .live-match-cont-2{
-  background-image: url("images/Sidemen Charity Match img.webp");
+  background-image: url("Sidemen Charity Match img.webp");
 }
 .live-match-cont-3{
-  background-image: url("images/Chelsea vs PSG img.webp");
+  background-image: url("Chelsea vs PSG img.webp");
 }
 .live-match-cont-4{
-  background-image: url("images/Scotland Matches img.webp");
+  background-image: url("Scotland Matches img.webp");
 }
 /*Sports slider 1*/
 .sport-slider-vid-cont{

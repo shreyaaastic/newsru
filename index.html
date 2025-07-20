@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/12b73cfb7c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="top-bar">
+    <div class="container-news">
+      <div class="top-info">
+        <div class="info" style="grid-area: box-1">
+          <span>Samara</span>
+          <span>May 20, 14:15</span>
+        </div>
+        <div class="logo" style="grid-area: box-2">
+          <span class="logo-icon">📡</span>
+          <span class="logo-text">NEWS.RU</span>
+        </div>
+        <div class="currency" style="grid-area: box-3">
+          <span>USD 73.21 ₽ <span class="down">▼</span></span>
+          <span>EUR 79.13 ₽ <span class="up">▲</span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <nav class="main-nav">
+    <div class="container-news">
+      <div class="nav-cont">
+        <div class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sports.html">Sport</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Lifestyle</a></li>
+      <li><a href="#">World</a></li>
+    </ul>
+    <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+      </div>
+    </div>
+  </nav>
+  
+<!--    <div class="sec-container">
+    <div class="container-news">
+       <div class="grid-container">
+         <div class="box news-sec-main news-sec-top">
+           <p class="news-main-tag"><span>World</span></p>
+          <h3 class="news-main-heading">Trump issues unenforceable WHO demands</h3>
+           <p class="news-main-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..</p>
+          <p class="news-main-publish-date">March 2, 2025</p>
+         </div>
+      </div>
+    </div>
+  </div> -->
+  
+  <div class="sec-container">
+    <div class="container-news">
+      <div class="heading-container">
+        <h2>Political News</h2>
+        <p class="read-more-btn">See more >></p>
+      </div>
+       <div class="grid-container grid-layout-1">
+         <div class="box news-sec-main news-sec-main-1" style="grid-area: box-1">
+           <p class="news-main-tag"><span>Political</span></p>
+          <h3 class="news-main-heading">Chaos at Jadavpur University: West Bengal Education Minister’s Car Incident Sparks Outrage</h3>
+           <p class="news-main-desc">Tension erupted at Jadavpur University on March 1, 2025, after West Bengal Education Minister Bratya Basu’s car was attacked by protesting students..</p>
+          <p class="news-main-publish-date">March 2, 2025</p>
+         </div>
+        <div class="box news-section" style="grid-area: box-2">
+          <img src="images/Dharmastala img.webp" width="100%"/>
+          <p class="news-tag">Political</p>
+          <h3 class="news-desc">SIT Demanded for Dharmasthala Crimes</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+        </div>
+        <div class="box news-section" style="grid-area: box-3">
+          <img src="images/Modi mamata.webp" width="100%"/>
+          <p class="news-tag">Political</p>
+          <h3 class="news-desc">Modi Unveils Projects, Slams TMC</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+        </div>
+        <div class="box news-section" style="grid-area: box-4">
+          <img src="images/Thakre img.webp" width="100%"/>
+          <p class="news-tag">Political</p>
+          <h3 class="news-desc">Thackeray Joins INDIA Bloc Meeting</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-5">
+          <p class="news-tag">Legal</p>
+          <h3 class="news-desc">Supreme Court Allows Ranveer’s Podcast Return</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-6">
+          <p class="news-tag">Sports</p>
+          <h3 class="news-desc">India’s Cricket Revival: Cup to Glory</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-7">
+          <p class="news-tag">Health</p>
+          <h3 class="news-desc">Maternal Mortality in India: Ongoing Struggles</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-8">
+          <p class="news-tag">Education</p>
+          <h3 class="news-desc">India’s Digital Gap Hurts Rural Education</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-9">
+          <p class="news-tag">Local Governance</p>
+          <h3 class="news-desc">Local Governance Struggles Amid Financial Crisis</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--   slider 1 -->
+  <div class="sec-container">
+    <div class="container-news">
+      <div class="heading-container">
+        <h2>World News</h2>
+        <p class="read-more-btn">See more >></p>
+      </div>
+      <div class="swiper mySwiper news-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider-desc-cont">
+              <p class="news-tag">World</p>
+              <h3 class="news-desc">M7.4 Quake Triggers Kamchatka Tsunami Watch</h3>
+            </div>
+            <div class="slider-publish-cont">
+              <p class="news-publish-date">March 2, 2025</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-desc-cont">
+              <p class="news-tag">World</p>
+              <h3 class="news-desc">Flash Floods Injure Fourteen in California</h3>
+            </div>
+            <div class="slider-publish-cont">
+              <p class="news-publish-date">March 2, 2025</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-desc-cont">
+              <p class="news-tag">World</p>
+              <h3 class="news-desc">Middle East Crisis Escalates Aid Attacks</h3>
+            </div>
+            <div class="slider-publish-cont">
+              <p class="news-publish-date">March 2, 2025</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-desc-cont">
+              <p class="news-tag">World</p>
+              <h3 class="news-desc">Europe Records Deadly 2025 Heatwave Toll</h3>
+            </div>
+            <div class="slider-publish-cont">
+              <p class="news-publish-date">March 2, 2025</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-desc-cont">
+              <p class="news-tag">World</p>
+              <h3 class="news-desc">Typhoon Danas Batters East Asia Coasts</h3>
+            </div>
+            <div class="slider-publish-cont">
+              <p class="news-publish-date">March 2, 2025</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+  
+ 
+    <div class="sec-container">
+    <div class="container-news">
+      <div class="heading-container">
+        <h2>Sports News</h2>
+        <p class="read-more-btn">See more >></p>
+      </div>
+      <div class="grid-container grid-layout-2">
+        <div class="box news-sec-main news-sec-main-2" style="grid-area: box-1">
+          <p class="news-main-tag"><span>Sports</span></p>
+          <h3 class="news-main-heading">India's Cricketing Resurgence: From World Cup Heartbreak to Champions Trophy Triumph</h3>
+           <p class="news-main-desc">In a remarkable display of resilience and determination, the Indian cricket team has transformed adversity into triumph, culminating in their recent victory at the ICC..</p>
+          <p class="news-main-publish-date">March 2, 2025</p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-2">
+          <p class="news-tag">Sports</p>
+          <h3 class="news-desc">Women’s Euro Quarter‑Final Features France v Germany</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-3">
+          <p class="news-tag">Sports</p>
+          <h3 class="news-desc">Lions Kick Off Australia Rugby Tour</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-4">
+          <p class="news-tag">Sports</p>
+          <h3 class="news-desc">Open Championship Tee Times Released</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-5">
+          <p class="news-tag">Sports</p>
+          <h3 class="news-desc">World Matchplay Darts Tournament Begins Blackpool</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-6">
+          <p class="news-tag">Sports</p>
+          <h3 class="news-desc">MLB All‑Star Game Features Historic Tiebreaker</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-7">
+          <p class="news-tag">Sports</p>
+          <h3 class="news-desc">WWE Evolution 2025: Stratton Beats Stratus</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--   slider 2 -->
+  <div class="sec-container">
+    <div class="container-news">
+      <div class="heading-container">
+        <h2>Health</h2>
+        <p class="read-more-btn">See more >></p>
+      </div>
+      <div class="swiper mySwiper news-slider news-slider-2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/mRNA img.webp" width="100%"/>
+          <p class="news-tag">Health</p>
+          <h3 class="news-desc">mRNA Vaccine Blocks Deadly Plague Bacteria</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/Nepa out break.webp" width="100%"/>
+          <p class="news-tag">Health</p>
+          <h3 class="news-desc">Kerala Nipah Outbreak Raises Alarms</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/Mosquito img.webp" width="100%"/>
+          <p class="news-tag">Health</p>
+          <h3 class="news-desc">WHO Issues New Mosquito Guidelines</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/mpox img.webp" width="100%"/>
+          <p class="news-tag">Health</p>
+          <h3 class="news-desc">Mpox Vaccine Wastage Sparks Concern</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/typhoid img.webp" width="100%"/>
+          <p class="news-tag">Health</p>
+          <h3 class="news-desc">Drug‑Resistant Typhoid Spreading Globally</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          </div>
+        </div>
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="sec-container">
+    <div class="container-news">
+      <div class="heading-container">
+        <h2>Technology</h2>
+        <p class="read-more-btn">See more >></p>
+      </div>
+      <div class="grid-container grid-layout-3">
+        <div class="box additional-news" style="grid-area: box-1">
+          <p class="news-tag">Technology</p>
+          <h3 class="news-desc">LG India Debuts AI Smart TVs</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-2">
+          <p class="news-tag">Technology</p>
+          <h3 class="news-desc">Perplexity CEO Predicts Job Automation</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-3">
+          <p class="news-tag">Technology</p>
+          <h3 class="news-desc">Google AI Agent Blocks Cyber Threat</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-4">
+          <p class="news-tag">Technology</p>
+          <h3 class="news-desc">UK Funds Supercomputers for AI</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-5">
+          <p class="news-tag">Technology</p>
+          <h3 class="news-desc">Apple Delivers Metal 4 AI Graphics</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-6">
+          <p class="news-tag">Technology</p>
+          <h3 class="news-desc">Google Launches General-Purpose ChatGPT Agent</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box news-sec-main news-sec-main-3" style="grid-area: box-7">
+          <p class="news-main-tag"><span>Technology</span></p>
+          <h3 class="news-main-heading">Nvidia Launches AI Weather Forecast Model</h3>
+           <p class="news-main-desc">Nvidia unveiled FourCastNet 3—an AI-driven model that can generate a 15‑day global weather forecast in just 64 seconds..</p>
+          <p class="news-main-publish-date">March 2, 2025</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="sec-container">
+    <div class="container-news">
+      <div class="heading-container">
+        <h2>Business</h2>
+        <p class="read-more-btn">See more >></p>
+      </div>
+      <div class="grid-container grid-layout-5">
+        <div class="box news-section" style="grid-area: box-1">
+          <img src="images/Meta img.webp" width="100%"/>
+          <p class="news-tag">Business</p>
+          <h3 class="news-desc">India Summons Google, Meta Executives</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+        </div>
+        <div class="box news-section" style="grid-area: box-2">
+          <img src="images/Modi foreign img.webp" width="100%"/>
+          <p class="news-tag">Business</p>
+          <h3 class="news-desc">Modi to Sign UK Free-Trade Agreement</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+        </div>
+        <div class="box news-section" style="grid-area: box-3">
+          <img src="images/Bit coin img.webp" width="100%"/>
+          <p class="news-tag">Business</p>
+          <h3 class="news-desc">Africa Leads Crypto-Education Payments Surge</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+        </div>
+        <div class="box news-section" style="grid-area: box-4">
+          <img src="images/Storm img.webp" width="100%"/>
+          <p class="news-tag">Business</p>
+          <h3 class="news-desc">Multi-Sector Team Activated for Himachal Disasters</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="sec-container">
+    <div class="container-news">
+      <div class="heading-container">
+        <h2>Fashion</h2>
+        <p class="read-more-btn">See more >></p>
+      </div>
+      <div class="grid-container grid-layout-5">
+        <div class="box news-section" style="grid-area: box-1">
+          <img src="images/Kiara Advani img.webp" width="100%"/>
+          <p class="news-tag">Fashion</p>
+          <h3 class="news-desc">Kiara Advani Redefines Maternity Fashion</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+        </div>
+        <div class="box news-section" style="grid-area: box-2">
+          <img src="images/Ireland fashion img.webp" width="100%"/>
+          <p class="news-tag">Fashion</p>
+          <h3 class="news-desc">Ireland Launches Inaugural Fashion Week</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+        </div>
+        <div class="box news-section" style="grid-area: box-3">
+          <img src="images/Clueless img.webp" width="100%"/>
+          <p class="news-tag">Fashion</p>
+          <h3 class="news-desc">Mona May Revisits Clueless Runway Inspiration</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+        </div>
+        <div class="box news-section" style="grid-area: box-4">
+          <img src="images/Polka dots img.webp" width="100%"/>
+          <p class="news-tag">Fashion</p>
+          <h3 class="news-desc">Polka Dots, Pearls Dominate Couture Week</h3>
+          <p class="news-publish-date">March 2, 2025</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="sec-container">
+    <div class="container-news">
+      <div class="heading-container">
+        <h2>Crime</h2>
+        <p class="read-more-btn">See more >></p>
+      </div>
+      <div class="grid-container grid-layout-4">
+        <div class="box news-sec-main news-sec-main-4" style="grid-area: box-1">
+          <p class="news-main-tag"><span>Crime</span></p>
+          <h3 class="news-main-heading">Rajasthan Gang Extortion Plot Foiled</h3>
+           <p class="news-main-desc">Police in Sriganganagar, Rajasthan, arrested four members of the Lawrence Bishnoi gang after intercepting..</p>
+          <p class="news-main-publish-date">March 2, 2025</p>
+        </div>
+        <div class="box" style="grid-area: box-2">
+          <div class="video-wrapper">
+             <iframe  src="https://www.youtube.com/embed/-OhGTINkHrw?si=FVlvfCaHpdWElziH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="box" style="grid-area: box-3">
+          <div class="video-wrapper">
+  <iframe  src="https://www.youtube.com/embed/5mfFMJ1nhjU?si=7RlSmdQFJJaJumU6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+        </div>
+        <div class="box news-sec-main news-sec-main-5" style="grid-area: box-4">
+          <p class="news-main-tag"><span>Crime</span></p>
+          <h3 class="news-main-heading">Delhi ‘Special 26’-Style Tutor Loots Relatives</h3>
+           <p class="news-main-desc">In Delhi, a female tutor and two accomplices impersonating CBI officers executed a brazen, well-planned..</p>
+          <p class="news-main-publish-date">March 2, 2025</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="news-footer">
+  <div class="container-news">
+    <div class="footer-logo-social">
+      <div class="logo">
+          <span class="logo-icon">📡</span>
+          <span class="logo-text">NEWS.RU</span>
+      </div>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-telegram"></i>
+        <i class="fa-brands fa-vk"></i>
+      </div>
+    </div>
+
+    <div class="footer-links grid-container grid-layout-6"> 
+      <div class="box" style="grid-area: box-1">
+        <h4>Home</h4>
+        <ul>
+          <li>Top Stories</li>
+          <li>Trending</li>
+          <li>Latest News</li>
+          <li>Editor's Picks</li>
+        </ul>
+      </div>
+      <div class="box" style="grid-area: box-2">
+        <h4>Sports</h4>
+        <ul>
+          <li>Football</li>
+          <li>Basketball</li>
+          <li>Tennis</li>
+          <li>Cricket</li>
+        </ul>
+      </div>
+      <div class="box" style="grid-area: box-3">
+        <h4>Business</h4>
+        <ul>
+          <li>Markets</li>
+          <li>Economy</li>
+          <li>Startups</li>
+          <li>Finance</li>
+        </ul>
+      </div>
+      <div class="box" style="grid-area: box-4">
+        <h4>Lifestyle</h4>
+        <ul>
+          <li>Health</li>
+          <li>Travel</li>
+          <li>Fashion</li>
+          <li>Food</li>
+        </ul>
+      </div>
+      <div class="box" style="grid-area: box-5">
+        <h4>World</h4>
+        <ul>
+          <li>Asia</li>
+          <li>Europe</li>
+          <li>USA</li>
+          <li>Middle East</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+    <p>&copy; 2025 NewsSite. All rights reserved.</p>
+  </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

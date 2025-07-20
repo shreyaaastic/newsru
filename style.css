@@ -1,0 +1,612 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+.sec-container, .top-bar, .main-nav, .news-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-container{
+  padding-bottom: 75px;
+}
+.container-news{
+  max-width: 1400px;
+  width: 90%;
+}
+.grid-container{
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 15px;
+}
+.grid-layout-1{
+  grid-template-areas: "box-1 box-1 box-1 box-5"
+    "box-1 box-1 box-1 box-6"
+    "box-1 box-1 box-1 box-7"
+    "box-2 box-3 box-4 box-8"
+    "box-2 box-3 box-4 box-9";
+}
+
+.grid-layout-2{
+    grid-template-areas: "box-1 box-1 box-2 box-5"
+    "box-1 box-1 box-3 box-6"
+    "box-1 box-1 box-4 box-7";
+}
+
+.grid-layout-3{
+    grid-template-areas: "box-1 box-4 box-7 box-7"
+    "box-2 box-5 box-7 box-7"
+    "box-3 box-6 box-7 box-7";
+}
+
+.grid-layout-4{
+    grid-template-areas: "box-1 box-1 box-2 box-4"
+    "box-1 box-1 box-3 box-4";
+}
+
+.grid-layout-5{
+    grid-template-areas: "box-1 box-2 box-3 box-4";
+}
+.grid-layout-6{
+    grid-template-areas: "box-1 box-2 box-3 box-4 box-5";
+}
+/*Header CSS*/
+.top-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  flex-wrap: wrap;
+}
+.info, .currency {
+  font-size: 14px;
+  color: #444;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #800000;
+}
+.logo-icon {
+  font-size: 24px;
+}
+.up {
+  color: green;
+}
+.down {
+  color: red;
+}
+
+/* Navigation */
+.main-nav{
+  background: #ECDFCC;
+  margin-bottom: 30px;
+}
+.nav-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  flex-wrap: wrap;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Hamburger toggle */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.search-icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/*footer css*/
+.news-footer{
+  background: #ECDFCC;
+  padding: 30px 0px;
+}
+.footer-logo-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.footer-logo-social, .footer-links{
+  border-bottom: 1px solid #B7B7B7;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.social-icons i {
+  color: #800000;
+  font-size: 18px;
+  cursor: pointer;
+}
+.social-icons i:not(:first-child) {
+  margin-left: 5px;
+}
+.footer-links h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-bottom, .footer-links ul li{
+  color: #777;
+  font-size: 14px;
+}
+.footer-links ul li {
+  line-height: 1.6;
+  cursor: pointer;
+}
+.footer-bottom{
+  text-align: center;
+}
+/*Element Css*/
+.box > *:not(:last-child), .slider-desc-cont > *:not(:last-child), .news-slider-2 .swiper-slide > *:not(:last-child){
+  margin-bottom: 5px;
+}
+.heading-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #EEEEEE;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.heading-container h2, .news-desc{
+  color: #2C2C2C;
+}
+.news-sec-main, .live-match-cont, .sport-slider-vid-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: center center / cover no-repeat;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+.news-sec-main::before, .live-match-cont::before, .sport-slider-vid-cont::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  z-index: -1;
+}
+.news-sec-top{
+  min-height: 40vw;
+  background-image: url("https://akm-img-a-in.tosshub.com/indiatoday/images/story/201803/SSC_1.jpeg?size=690:388");
+}
+.news-sec-main-1{
+  background-image: url("images/banner-img.webp");
+}
+.news-sec-main-2{
+  background-image: url("images/Sports banner.webp");
+}
+.news-sec-main-3{
+  background-image: url("images/Technology banner img.webp");
+}
+.news-sec-main-4{
+/*   min-height: 400px; */
+  background-image: url("images/Rajasthan Gang img.webp");
+}
+.news-sec-main-5{
+  background-image: url("images/Delhi ‘Special 26’ img.webp");
+}
+.news-section{
+  padding: 10px;
+  background-color: #EEEEEE;
+}
+.news-tag, .news-publish-date, .read-more-btn, .news-main-tag, .news-main-publish-date{
+  font-size: 12px;
+}
+.news-tag, .news-desc, .news-main-tag, .news-main-heading{
+  font-weight: 600;
+}
+.news-main-tag span{
+  display: inline-block;
+  color: #fff;
+  letter-spacing: 1px;
+  background-color: #BF3131;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+.news-main-heading{
+  font-size: 20px;
+}
+.news-main-desc{
+  font-size: 14px;
+  font-weight: 400;
+}
+.news-tag{
+  color: #BF3131;
+}
+.news-desc{
+  font-size: 16px;
+  line-height: 20px;
+}
+.news-publish-date{
+  color: #7D7C7C;
+}
+.additional-news{
+  padding-bottom: 10px;
+  border-bottom: 2px solid #EEEEEE;
+}
+.read-more-btn{
+  color: #3A98B9;
+}
+/*youtube video css*/
+.video-wrapper {
+  position: relative;
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  object-fit: contain;
+}
+
+/*slider css*/
+.news-slider.swiper {
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+ }
+ .swiper-wrapper {
+  display: flex;
+  align-items: stretch; /* Ensures all slides stretch to same height */
+}
+.news-slider .swiper-slide {
+  background: #ECDFCC;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  padding: 10px;
+}
+.news-slider .swiper-button-prev, .news-slider .swiper-button-next {
+    top: 23px;
+    width: 35px;
+    height: 35px;
+    background: #ECDFCC;
+}
+.news-slider .swiper-button-prev{
+    left: auto;
+    right: 55px;
+}
+.swiper-button-next{
+    right: 0px;
+}
+.news-slider .swiper-button-prev::after, .news-slider .swiper-button-next::after {
+    font-size: 20px;
+    color: #939185;
+    font-weight: 600;
+}
+.slider-publish-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider-publish-cont i{
+  color: #939185;
+  padding: 5px 8px;
+  border: 1px solid #939185;
+  border-radius: 50%;
+}
+
+/*slider 2*/
+.news-slider-2 .swiper-slide {
+  background: #EEEEEE;
+  min-height: auto;
+}
+.news-slider-2 .swiper-button-prev, .news-slider-2 .swiper-button-next {
+    background: #EEEEEE;
+}
+/* extra css for sports page */
+/*Sports-Layout*/
+.sport-grid-layout-1{
+  grid-template-areas: "box-1 box-1 box-2 box-6"
+    "box-1 box-1 box-3 box-7"
+    "box-1 box-1 box-4 box-8"
+    "box-1 box-1 box-5 box-9";
+}
+/*Sports-Element*/
+.sports-live-tag span{
+  position: relative;
+  padding-left: 22px;
+}
+.sports-live-tag span::before{
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 3px;
+  top: 9px;
+  left: 10px;
+  background: #fff;
+  border-radius: 50%;
+  outline: 1.5px solid #fff;
+  outline-offset: 3px;
+}
+.live-match-cont .news-desc{
+  color: #fff;
+}
+.sport-slider-vid-cont{
+  background-image: url("https://www.si.com/.image/t_share/MTk1MDM5MjI1NjE0MTgxNTc1/imago1002614356h.jpg");
+}
+.live-match-cont{
+  padding: 10px;
+}
+.sports-sec-main-1{
+  background-image: url("images/Liverpool Near img.webp");
+}
+.live-match-cont-1{
+  background-image: url("images/Gamba Osaka vs Kawasaki img.webp");
+}
+.live-match-cont-2{
+  background-image: url("images/Sidemen Charity Match img.webp");
+}
+.live-match-cont-3{
+  background-image: url("images/Chelsea vs PSG img.webp");
+}
+.live-match-cont-4{
+  background-image: url("images/Scotland Matches img.webp");
+}
+/*Sports slider 1*/
+.sport-slider-vid-cont{
+  justify-content: center;
+  align-items: center;
+  min-height: 130px;
+  font-size: 30px;
+}
+/*Responsive*/
+@media(min-width: 1441px){
+  .news-sec-top {
+    min-height: 550px;
+  }
+}
+@media (max-width: 980px){
+  .grid-layout-1{
+  grid-template-areas: "box-1 box-1 box-1"
+    "box-1 box-1 box-1"
+    "box-2 box-3 box-4"
+    "box-2 box-3 box-4"
+    "box-5 box-6 box-7"
+    "box-8 box-9 .";
+  }
+  .grid-layout-2{
+    grid-template-areas: "box-1 box-1 box-1"
+    "box-1 box-1 box-1"
+    "box-2 box-3 box-4"
+    "box-5 box-6 box-7";
+  }
+  .grid-layout-3{
+    grid-template-areas: "box-7 box-7 box-7"
+    "box-7 box-7 box-7"
+    "box-1 box-2 box-3"
+    "box-4 box-5 box-6";
+  }
+  .grid-layout-4{
+    grid-template-areas: "box-1 box-1 box-1"
+    "box-1 box-1 box-1"
+    "box-4 box-4 box-2"
+    "box-4 box-4 box-3";
+   }
+  .grid-layout-5{
+    grid-template-areas: "box-1 box-2"
+    "box-3 box-4";
+   }
+  .grid-layout-6{
+    grid-template-areas: "box-1 box-2 box-3"
+      "box-4 box-5 .";
+  }
+  /*Sports-Layout*/
+  .sport-grid-layout-1{
+    grid-template-areas: "box-1 box-1 box-1 box-1"
+      "box-1 box-1 box-1 box-1"
+      "box-2 box-3 box-4 box-5"
+      "box-6 box-7 box-8 box-9";
+  }
+}
+
+@media (max-width: 767px){
+  .sec-container{
+    padding-bottom: 50px;
+  }
+  .grid-layout-1{
+    grid-template-areas: "box-1 box-1"
+      "box-1 box-1"
+      "box-2 box-3"
+      "box-2 box-3"
+      "box-4 box-5"
+      "box-4 box-6"
+      "box-7 box-8"
+      "box-9 .";
+    }
+    .grid-layout-2{
+      grid-template-areas: "box-1 box-1"
+      "box-1 box-1"
+      "box-2 box-3"
+      "box-4 box-5"
+      "box-6 box-7";
+    }
+    .grid-layout-3{
+    grid-template-areas: "box-7 box-7"
+    "box-7 box-7"
+    "box-1 box-2"
+    "box-3 box-4"
+    "box-5 box-6";
+  }
+    .grid-layout-4{
+    grid-template-areas: "box-1 box-1"
+    "box-1 box-1"
+    "box-4 box-2"
+    "box-4 box-3";
+   }
+  .top-info{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-areas: "box-2 box-1"
+    "box-2 box-3";
+  }
+  .info, .currency{
+    text-align: right;
+    font-size: 10px;
+  }
+  .logo{
+    font-size: 18px;
+  }
+  .search-icon{
+    display: none;
+  }
+  .menu {
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+    width: 100%;
+  }
+  .menu.active {
+    max-height: 600px;
+  }
+  .menu-toggle {
+    font-size: 18px;
+    display: block;
+    cursor: pointer;
+  }
+  .news-sec-top{
+   min-height: 400px;
+  }
+   /*Sports-Layout*/
+  .sport-grid-layout-1{
+    grid-template-areas: "box-1 box-1"
+      "box-1 box-1"
+      "box-2 box-3"
+      "box-4 box-5"
+      "box-6 box-7"
+      "box-8 box-9";
+  }
+}
+
+@media (max-width: 450px){
+  .grid-layout-1{
+    grid-template-areas: 
+      "box-1 box-1"
+      "box-1 box-1"
+      "box-1 box-1"
+      "box-2 box-2"
+      "box-2 box-2"
+      "box-3 box-3"
+      "box-3 box-3"
+      "box-4 box-4"
+      "box-4 box-4"
+      "box-5 box-5"
+      "box-6 box-6"
+      "box-7 box-7"
+      "box-8 box-8"
+      "box-9 box-9";
+    }
+      .grid-layout-2{
+      grid-template-areas: 
+      "box-1 box-1"
+      "box-1 box-1"
+      "box-1 box-1"
+      "box-2 box-2"
+      "box-3 box-3"
+      "box-4 box-4"
+      "box-5 box-5"
+      "box-6 box-6"
+      "box-7 box-7";
+    }
+      .grid-layout-3{
+      grid-template-areas: 
+      "box-7 box-7"
+      "box-7 box-7"
+      "box-7 box-7"
+      "box-1 box-1"
+      "box-2 box-2"
+      "box-3 box-3"
+      "box-4 box-4"
+      "box-5 box-5"
+      "box-6 box-6";
+    }
+  .grid-layout-4{
+    grid-template-areas: 
+    "box-1 box-1"
+    "box-4 box-4"
+    "box-2 box-2"
+    "box-3 box-3";
+  }
+   .grid-layout-5{
+    grid-template-areas: 
+    "box-1 box-1"
+    "box-2 box-2"
+    "box-3 box-3"
+    "box-4 box-4";
+  }
+  .grid-layout-6{
+    grid-template-areas: "box-1 box-2"
+      "box-3 box-4"
+      "box-5 .";
+  }
+  .footer-logo-social {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .footer-logo-social, .footer-links{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  /*Sports-Layout*/
+  .sport-grid-layout-1{
+    grid-template-areas: "box-1"
+      "box-1"
+      "box-1"
+      "box-2"
+      "box-3"
+      "box-4"
+      "box-5"
+      "box-6"
+      "box-7"
+      "box-8"
+      "box-9";
+  }
+}
+

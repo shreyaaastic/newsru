@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/12b73cfb7c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="top-bar">
+    <div class="container-news">
+      <div class="top-info">
+        <div class="info" style="grid-area: box-1">
+          <span>Samara</span>
+          <span>May 20, 14:15</span>
+        </div>
+        <div class="logo" style="grid-area: box-2">
+          <span class="logo-icon">📡</span>
+          <span class="logo-text">NEWS.RU</span>
+        </div>
+        <div class="currency" style="grid-area: box-3">
+          <span>USD 73.21 ₽ <span class="down">▼</span></span>
+          <span>EUR 79.13 ₽ <span class="up">▲</span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <nav class="main-nav">
+    <div class="container-news">
+      <div class="nav-cont">
+        <div class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sports.html">Sport</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Lifestyle</a></li>
+      <li><a href="#">World</a></li>
+    </ul>
+    <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+      </div>
+    </div>
+  </nav>
+  
+<!--    <div class="sec-container">
+    <div class="container-news">
+       <div class="grid-container">
+         <div class="box news-sec-main news-sec-top">
+           <p class="news-main-tag"><span>World</span></p>
+          <h3 class="news-main-heading">Trump issues unenforceable WHO demands</h3>
+           <p class="news-main-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..</p>
+          <p class="news-main-publish-date">May 20, 2020</p>
+         </div>
+      </div>
+    </div>
+  </div> -->
+  
+<!--   sports sec 1 -->
+  <div class="sec-container">
+    <div class="container-news">
+      <div class="heading-container">
+        <h2>Sports</h2>
+        <p class="read-more-btn">See more >></p>
+      </div>
+       <div class="grid-container sport-grid-layout-1">
+         <div class="box news-sec-main news-sec-main-1 sports-sec-main-1" style="grid-area: box-1">
+           <p class="news-main-tag sports-live-tag"><span>Live</span></p>
+          <h3 class="news-main-heading">Liverpool Near £82M Ekitike Deal</h3>
+           <p class="news-main-desc">The Reds are set to sign French forward Hugo Ekitike from Eintracht Frankfurt for around £82 million, boosting their summer spending past £260 million...</p>
+          <p class="news-main-publish-date">May 20, 2020</p>
+         </div>
+        <div class="box live-match-cont live-match-cont-1" style="grid-area: box-2">
+          <p class="news-main-tag sports-live-tag"><span>Live</span></p>
+          <h3 class="news-desc">Gamba Osaka vs Kawasaki Frontale LIVE</h3>
+        </div>
+        <div class="box live-match-cont live-match-cont-2" style="grid-area: box-3">
+          <p class="news-main-tag sports-live-tag"><span>Live</span></p>
+          <h3 class="news-desc">Sidemen Charity Match Draws Millions</h3>
+        </div>
+        <div class="box live-match-cont live-match-cont-3" style="grid-area: box-4">
+          <p class="news-main-tag sports-live-tag"><span>Live</span></p>
+          <h3 class="news-desc">Chelsea vs PSG Final Highlights</h3>
+        </div>
+         <div class="box live-match-cont live-match-cont-4" style="grid-area: box-5">
+          <p class="news-main-tag sports-live-tag"><span>Live</span></p>
+          <h3 class="news-desc">Scotland Matches Return Free‑to‑Air</h3>
+        </div>
+        <div class="box additional-news" style="grid-area: box-6">
+          <p class="news-tag">Football</p>
+          <h3 class="news-desc">Bayern Interested in Trossard Move</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-7">
+          <p class="news-tag">Football</p>
+          <h3 class="news-desc">Poland Targets Lewandowski World Qualifiers</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-8">
+          <p class="news-tag">Football</p>
+          <h3 class="news-desc">Chelsea Must Sell To Fund Transfers</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-9">
+          <p class="news-tag">Football</p>
+          <h3 class="news-desc">PSG Thump Inter 5–0 In Final</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Sports  slider 1 -->
+  <div class="sec-container">
+    <div class="container-news">
+      <div class="heading-container">
+        <h2>Tennis</h2>
+        <p class="read-more-btn">See more >></p>
+      </div>
+      <div class="swiper mySwiper news-slider news-slider-2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+          <div class="sport-slider-vid-cont">
+            <i class="fa-solid fa-play"></i>
+          </div>
+          <p class="news-tag">Tennis</p>
+          <h3 class="news-desc">Olympic Champion Zheng Pauses Tour</h3>
+          </div>
+          <div class="swiper-slide">
+            <div class="sport-slider-vid-cont">
+            <i class="fa-solid fa-play"></i>
+          </div>
+          <p class="news-tag">Tennis</p>
+          <h3 class="news-desc">Jannik Sinner Wins Wimbledon Title</h3>
+          </div>
+          <div class="swiper-slide">
+            <div class="sport-slider-vid-cont">
+            <i class="fa-solid fa-play"></i>
+          </div>
+          <p class="news-tag">Tennis</p>
+          <h3 class="news-desc">Ons Jabeur Announces Break From Tennis</h3>
+          </div>
+          <div class="swiper-slide">
+            <div class="sport-slider-vid-cont">
+            <i class="fa-solid fa-play"></i>
+          </div>
+          <p class="news-tag">Tennis</p>
+          <h3 class="news-desc">Tara Moore Gets Four-Year Doping Ban</h3>
+          </div>
+          <div class="swiper-slide">
+            <div class="sport-slider-vid-cont">
+            <i class="fa-solid fa-play"></i>
+          </div>
+          <p class="news-tag">Tennis</p>
+          <h3 class="news-desc">Eala Makes Philippine Tennis History</h3>
+          </div>
+        </div>
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="sec-container">
+    <div class="container-news">
+      <div class="heading-container">
+        <h2>World News</h2>
+        <p class="read-more-btn">See more >></p>
+      </div>
+       <div class="grid-container grid-layout-1">
+         <div class="box news-sec-main news-sec-main-1" style="grid-area: box-1">
+           <p class="news-main-tag"><span>World</span></p>
+          <h3 class="news-main-heading">Trump issues unenforceable WHO demands</h3>
+           <p class="news-main-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..</p>
+          <p class="news-main-publish-date">May 20, 2020</p>
+         </div>
+        <div class="box news-section" style="grid-area: box-2">
+          <img src="https://images.hindustantimes.com/img/2022/07/29/1600x900/051d33d6-0f62-11ed-89a6-3c036b422a2f_1659115060591.jpg" width="100%"/>
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+        </div>
+        <div class="box news-section" style="grid-area: box-3">
+          <img src="https://images.hindustantimes.com/img/2022/07/29/1600x900/051d33d6-0f62-11ed-89a6-3c036b422a2f_1659115060591.jpg" width="100%"/>
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+        </div>
+        <div class="box news-section" style="grid-area: box-4">
+          <img src="https://images.hindustantimes.com/img/2022/07/29/1600x900/051d33d6-0f62-11ed-89a6-3c036b422a2f_1659115060591.jpg" width="100%"/>
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-5">
+          <p class="news-tag">USA</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-6">
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-7">
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-8">
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-9">
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--   slider 1 -->
+  <div class="sec-container">
+    <div class="container-news">
+      <div class="heading-container">
+        <h2>World News</h2>
+        <p class="read-more-btn">See more >></p>
+      </div>
+      <div class="swiper mySwiper news-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider-desc-cont">
+              <p class="news-tag">World</p>
+              <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+            </div>
+            <div class="slider-publish-cont">
+              <p class="news-publish-date">May 20, 2020</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-desc-cont">
+              <p class="news-tag">World</p>
+              <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+            </div>
+            <div class="slider-publish-cont">
+              <p class="news-publish-date">May 20, 2020</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-desc-cont">
+              <p class="news-tag">World</p>
+              <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+            </div>
+            <div class="slider-publish-cont">
+              <p class="news-publish-date">May 20, 2020</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-desc-cont">
+              <p class="news-tag">World</p>
+              <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+            </div>
+            <div class="slider-publish-cont">
+              <p class="news-publish-date">May 20, 2020</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-desc-cont">
+              <p class="news-tag">World</p>
+              <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+            </div>
+            <div class="slider-publish-cont">
+              <p class="news-publish-date">May 20, 2020</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+  
+ 
+    <div class="sec-container">
+    <div class="container-news">
+      <div class="heading-container">
+        <h2>World News</h2>
+        <p class="read-more-btn">See more >></p>
+      </div>
+      <div class="grid-container grid-layout-2">
+        <div class="box news-sec-main news-sec-main-2" style="grid-area: box-1">
+          <p class="news-main-tag"><span>World</span></p>
+          <h3 class="news-main-heading">Trump issues unenforceable WHO demands</h3>
+           <p class="news-main-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..</p>
+          <p class="news-main-publish-date">May 20, 2020</p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-2">
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-3">
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-4">
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-5">
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-6">
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-7">
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--   slider 2 -->
+  <div class="sec-container">
+    <div class="container-news">
+      <div class="heading-container">
+        <h2>World News</h2>
+        <p class="read-more-btn">See more >></p>
+      </div>
+      <div class="swiper mySwiper news-slider news-slider-2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://images.hindustantimes.com/img/2022/07/29/1600x900/051d33d6-0f62-11ed-89a6-3c036b422a2f_1659115060591.jpg" width="100%"/>
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://images.hindustantimes.com/img/2022/07/29/1600x900/051d33d6-0f62-11ed-89a6-3c036b422a2f_1659115060591.jpg" width="100%"/>
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://images.hindustantimes.com/img/2022/07/29/1600x900/051d33d6-0f62-11ed-89a6-3c036b422a2f_1659115060591.jpg" width="100%"/>
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://images.hindustantimes.com/img/2022/07/29/1600x900/051d33d6-0f62-11ed-89a6-3c036b422a2f_1659115060591.jpg" width="100%"/>
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://images.hindustantimes.com/img/2022/07/29/1600x900/051d33d6-0f62-11ed-89a6-3c036b422a2f_1659115060591.jpg" width="100%"/>
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          </div>
+        </div>
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="sec-container">
+    <div class="container-news">
+      <div class="heading-container">
+        <h2>World News</h2>
+        <p class="read-more-btn">See more >></p>
+      </div>
+      <div class="grid-container grid-layout-3">
+        <div class="box additional-news" style="grid-area: box-1">
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-2">
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-3">
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-4">
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-5">
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box additional-news" style="grid-area: box-6">
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+          <p class="read-more-btn">Read more >></p>
+        </div>
+        <div class="box news-sec-main news-sec-main-3" style="grid-area: box-7">
+          <p class="news-main-tag"><span>World</span></p>
+          <h3 class="news-main-heading">Trump issues unenforceable WHO demands</h3>
+           <p class="news-main-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..</p>
+          <p class="news-main-publish-date">May 20, 2020</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="sec-container">
+    <div class="container-news">
+      <div class="heading-container">
+        <h2>World News</h2>
+        <p class="read-more-btn">See more >></p>
+      </div>
+      <div class="grid-container grid-layout-5">
+        <div class="box news-section" style="grid-area: box-1">
+          <img src="https://images.hindustantimes.com/img/2022/07/29/1600x900/051d33d6-0f62-11ed-89a6-3c036b422a2f_1659115060591.jpg" width="100%"/>
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+        </div>
+        <div class="box news-section" style="grid-area: box-2">
+          <img src="https://images.hindustantimes.com/img/2022/07/29/1600x900/051d33d6-0f62-11ed-89a6-3c036b422a2f_1659115060591.jpg" width="100%"/>
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+        </div>
+        <div class="box news-section" style="grid-area: box-3">
+          <img src="https://images.hindustantimes.com/img/2022/07/29/1600x900/051d33d6-0f62-11ed-89a6-3c036b422a2f_1659115060591.jpg" width="100%"/>
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+        </div>
+        <div class="box news-section" style="grid-area: box-4">
+          <img src="https://images.hindustantimes.com/img/2022/07/29/1600x900/051d33d6-0f62-11ed-89a6-3c036b422a2f_1659115060591.jpg" width="100%"/>
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="sec-container">
+    <div class="container-news">
+      <div class="heading-container">
+        <h2>World News</h2>
+        <p class="read-more-btn">See more >></p>
+      </div>
+      <div class="grid-container grid-layout-5">
+        <div class="box news-section" style="grid-area: box-1">
+          <img src="https://images.hindustantimes.com/img/2022/07/29/1600x900/051d33d6-0f62-11ed-89a6-3c036b422a2f_1659115060591.jpg" width="100%"/>
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+        </div>
+        <div class="box news-section" style="grid-area: box-2">
+          <img src="https://images.hindustantimes.com/img/2022/07/29/1600x900/051d33d6-0f62-11ed-89a6-3c036b422a2f_1659115060591.jpg" width="100%"/>
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+        </div>
+        <div class="box news-section" style="grid-area: box-3">
+          <img src="https://images.hindustantimes.com/img/2022/07/29/1600x900/051d33d6-0f62-11ed-89a6-3c036b422a2f_1659115060591.jpg" width="100%"/>
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+        </div>
+        <div class="box news-section" style="grid-area: box-4">
+          <img src="https://images.hindustantimes.com/img/2022/07/29/1600x900/051d33d6-0f62-11ed-89a6-3c036b422a2f_1659115060591.jpg" width="100%"/>
+          <p class="news-tag">World</p>
+          <h3 class="news-desc">Trump issues unenforceable WHO demands</h3>
+          <p class="news-publish-date">May 20, 2020</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <div class="sec-container">
+    <div class="container-news">
+      <div class="heading-container">
+        <h2>World News</h2>
+        <p class="read-more-btn">See more >></p>
+      </div>
+      <div class="grid-container grid-layout-4">
+        <div class="box news-sec-main news-sec-main-4" style="grid-area: box-1">
+          <p class="news-main-tag"><span>World</span></p>
+          <h3 class="news-main-heading">Trump issues unenforceable WHO demands</h3>
+           <p class="news-main-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..</p>
+          <p class="news-main-publish-date">May 20, 2020</p>
+        </div>
+        <div class="box" style="grid-area: box-2">
+          <div class="video-wrapper">
+  <iframe  src="https://www.youtube.com/embed/gh8la7jIS90?si=4BIpj8WVf6__2_vL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+        </div>
+        <div class="box" style="grid-area: box-3">
+          <div class="video-wrapper">
+  <iframe  src="https://www.youtube.com/embed/gh8la7jIS90?si=4BIpj8WVf6__2_vL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+        </div>
+        <div class="box news-sec-main news-sec-main-5" style="grid-area: box-4">
+          <p class="news-main-tag"><span>World</span></p>
+          <h3 class="news-main-heading">Trump issues unenforceable WHO demands</h3>
+           <p class="news-main-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..</p>
+          <p class="news-main-publish-date">May 20, 2020</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  
+  <footer class="news-footer">
+  <div class="container-news">
+    <div class="footer-logo-social">
+      <div class="logo">
+          <span class="logo-icon">📡</span>
+          <span class="logo-text">NEWS.RU</span>
+      </div>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-telegram"></i>
+        <i class="fa-brands fa-vk"></i>
+      </div>
+    </div>
+
+    <div class="footer-links grid-container grid-layout-6"> 
+      <div class="box" style="grid-area: box-1">
+        <h4>Home</h4>
+        <ul>
+          <li>Top Stories</li>
+          <li>Trending</li>
+          <li>Latest News</li>
+          <li>Editor's Picks</li>
+        </ul>
+      </div>
+      <div class="box" style="grid-area: box-2">
+        <h4>Sports</h4>
+        <ul>
+          <li>Football</li>
+          <li>Basketball</li>
+          <li>Tennis</li>
+          <li>Cricket</li>
+        </ul>
+      </div>
+      <div class="box" style="grid-area: box-3">
+        <h4>Business</h4>
+        <ul>
+          <li>Markets</li>
+          <li>Economy</li>
+          <li>Startups</li>
+          <li>Finance</li>
+        </ul>
+      </div>
+      <div class="box" style="grid-area: box-4">
+        <h4>Lifestyle</h4>
+        <ul>
+          <li>Health</li>
+          <li>Travel</li>
+          <li>Fashion</li>
+          <li>Food</li>
+        </ul>
+      </div>
+      <div class="box" style="grid-area: box-5">
+        <h4>World</h4>
+        <ul>
+          <li>Asia</li>
+          <li>Europe</li>
+          <li>USA</li>
+          <li>Middle East</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+    <p>&copy; 2025 NewsSite. All rights reserved.</p>
+  </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
